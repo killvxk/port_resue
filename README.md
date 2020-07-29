@@ -1,9 +1,10 @@
 # 端口复用
-
+## 技术原理
++ 注入SSH/Apache2等进程，挂钩accept/read/write等函数。复用对方服务端口，转发自身流量，实现反弹Shell等。
 ## 使用方法
 
 + client_on_windows
-  + define HOST处设定目标IP
+  + define HOST 处设定目标IP
   + define PORT 处设定目标端口
   + 使用VS2019编译运行
 + server_on_linux
