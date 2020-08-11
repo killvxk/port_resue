@@ -18,3 +18,7 @@
 | kali 2020 | 一切正常                                       | 一切正常                                         |
 | ubuntu 9  | 一切正常                                       | 注入worker进程段错误（即使注入空so文件）         |
 | centos 7  | 成功注入，运行过程段错误(需要事先setenforce 0) | 注入worker进程dlopen调用失败（即使注入空so文件） |
+
+## 参考链接
+https://blog.xpnsec.com/linux-process-injection-aka-injecting-into-sshd-for-fun/
+https://github.com/gaffe23/linux-inject
