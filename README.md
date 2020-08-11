@@ -1,6 +1,6 @@
 # 端口复用
 ## 技术原理
-+ 注入SSH/Apache2等进程，挂钩accept/read/write等函数。复用对方服务端口，转发自身流量，实现反弹Shell等。
++ 注入SSH/Apache2等进程，挂钩accept/read/write等函数。复用对方服务端口，加密转发自身流量，实现反弹Shell、文件上传下载等。
 ## 使用方法
 
 + client_on_windows
