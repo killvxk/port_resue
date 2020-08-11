@@ -20,5 +20,7 @@
 | centos 7  | 成功注入，运行过程段错误(需要事先setenforce 0) | 注入worker进程dlopen调用失败（即使注入空so文件） |
 
 ## 参考链接
+Linux ptrace introduction AKA injecting into sshd for fun：  
 https://blog.xpnsec.com/linux-process-injection-aka-injecting-into-sshd-for-fun/  
+Tool for injecting a shared object into a Linux process：  
 https://github.com/gaffe23/linux-inject
