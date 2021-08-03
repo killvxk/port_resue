@@ -1,4 +1,4 @@
-# 端口复用（P）
+# 端口复用（Port Reuse）
 ## 技术原理
 + 注入SSH/Apache2等进程，挂钩accept/read/write等函数。复用对方服务端口，加密转发自身流量，实现反弹Shell、文件上传下载等。
 ## 使用方法
